@@ -9,7 +9,7 @@ input_devices = ['alcohol', 'smoke']
 output_devices = ['ledRed', 'ledGreen', 'ledYellow', 'ledOne', 'ledTwo', 'ledThree']
 
 SERVER_HOST = "http://172.20.10.5:8000"
-
+#server
 
 def getServerState() -> dict:
     r = requests.get(SERVER_HOST + "/system_state")
