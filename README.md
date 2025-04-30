@@ -1,4 +1,39 @@
-# EmbeddedProjectGroup3
+# 🔧 Embedded Systems Project – Smart Device Control via Serial & Web Interface
+
+## 📦 Overview
+This project integrates embedded firmware, Python middleware, and a web-based frontend to manage and monitor environmental conditions (e.g., smoke, alcohol levels) using Arduino and a Linux-based microcontroller (e.g., MT7688AN or Raspberry Pi). It supports:
+
+Sensor input & data smoothing (e.g., alcohol, smoke)
+
+LED control & audio alerts via Serial
+
+Web UI + REST API for remote control
+
+Real-time serial communication bridge
+
+## 🧱 Project Architecture
+
+[Web UI (main.ts)]
+
+       │
+       ▼
+       
+[FastAPI Backend (main.py)]
+
+       │
+       ▼
+       
+[Serial Bridge (main.py)]
+
+       │
+       ▼
+       
+[Arduino (arduino.ino)]
+
+       │
+       
+Sensors (Alcohol, Smoke)
+Outputs (LEDs, Buzzer)
 
 ## Links
 - Python Examples: https://github.com/eclipse/mraa
