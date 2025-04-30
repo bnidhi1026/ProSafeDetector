@@ -14,26 +14,36 @@ Real-time serial communication bridge
 ## 🧱 Project Architecture
 
 [Web UI (main.ts)]
-
        │
        ▼
        
 [FastAPI Backend (main.py)]
-
        │
        ▼
        
 [Serial Bridge (main.py)]
-
        │
        ▼
        
 [Arduino (arduino.ino)]
-
        │
        
 Sensors (Alcohol, Smoke)
 Outputs (LEDs, Buzzer)
+
+## 🗂 File Structure
+
+File Name	     |                  Description
+
+arduino.ino	    --       Arduino sketch. Parses serial commands and controls LEDs, buzzer, and sensors.
+
+main.py	    --       FastAPI backend to expose REST endpoints and manage device states.
+
+main.py (2nd)	    --       Serial bridge script that synchronizes Arduino and FastAPI via UART.
+
+serial_test.py    --       Simple script for testing Arduino serial communication.
+
+main.ts	    --       Web frontend that sends API requests to FastAPI for user interaction.
 
 ## Links
 - Python Examples: https://github.com/eclipse/mraa
